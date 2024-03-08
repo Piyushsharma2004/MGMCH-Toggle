@@ -1,0 +1,108 @@
+body {
+    font-family: sans-serif;
+    
+
+}
+
+.preference-container {
+    padding: 4%;
+    border-radius: 40px;
+    height: 80vh;
+    margin-left: 4%;
+    margin-top: 2%;
+    width: 80vw;
+    background-color: rgb(224, 224, 224);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 1%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.heading-text{
+    margin-left: 5%;
+    height: 22px;
+}
+.sub-heading-text{
+    margin-left: 5.3%;
+    
+}
+
+.preference-container label {
+    display: flex;
+    align-items: center;
+}
+.pref1-btn{
+    background-color: rgb(151, 151, 151);
+    width: 45px;
+    height: 25px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+}
+.flex-toggle{
+    display: flex;
+    
+    
+}
+.pref1-btn::before
+{
+    position: absolute;
+    content: '';
+    background-color: whitesmoke;
+    width: 19px;
+    height: 18px;
+    border-radius: 100px;
+    margin: 4px;
+    transition: 0.2s;
+}
+input:checked + .pref1-btn{
+    background-color: #2d04b4;
+}
+input:checked + .pref1-btn-green{
+    background-color: rgb(2, 211, 2);
+}
+
+input:checked + .pref5-btn{
+    background-color: red;
+}
+input:checked + .pref1-btn::before{
+    transform: translateX(18px);
+}
+#error-message {
+    color: red;
+    margin-left: 6%;
+    
+    
+   
+}
+.display-checkbox{
+    display: none;
+}
+.label-text{
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 10px;
+    font-style: italic;
+    
+}
+@media (min-width: 250px) and (max-width: 500px) {
+    .label-text{
+        width: 80%;
+        font-size: 17px;
+    }
+  }
+    @media (min-width: 501px) and (max-width: 800px) {
+        .label-text{
+            width: 70vh;
+            font-size: 1.2rem;
+        }
+    }
+    @media (min-width: 801px) and (max-width: 1200px) {
+        .label-text{
+            width: 70vh;
+            font-size: 1.2rem;
+        }
+    }

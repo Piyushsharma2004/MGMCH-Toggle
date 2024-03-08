@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treatment Preferences</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading-text">Treatment Preferences</h1>
+    <p class="sub-heading-text">Please rank your preferences for treatment goals</p>
+    <div class="preference-container">
+        <!-- 1 preferences -->
+      <div class="flex-toggle">
+        <input
+          class="display-checkbox"
+          type="checkbox"
+          id="pref1"
+          name="preference"
+          value="1"
+        />
+        <label for="pref1" class="pref1-btn pref1-btn-green"> </label>
+        <label for="pref1" class="label-text"> Best chance of cure. </label>
+      </div>
+      <!-- 1 preferences end-->
+       <!-- 2 preferences -->
+      <div class="flex-toggle">
+      <input type="checkbox" id="pref2" name="preference" value="2" class="display-checkbox" /> 
+      <label for="pref2" class="pref1-btn  ">
+      </label>
+      <label for="pref2" class="label-text">
+       
+        Obtaining longest survival even if cure is not possible
+      </label>
+    </div>
+    <!-- 2 preferences end-->
+     <!-- 3 preferences -->
+     <div class="flex-toggle">
+        <input type="checkbox" id="pref3" name="preference" value="3" class="display-checkbox" /> 
+        <label for="pref3" class="pref1-btn">
+        </label>
+        <label for="pref3" class="label-text">
+         Convenient hospital visit schedule - minimizing need to come to hospital
+         or get admitted for treatment        </label>
+      </div>
+      <!-- 3 preferences end-->
+           <!-- 4 preferences -->
+     <div class="flex-toggle">
+        <input type="checkbox" id="pref4" name="preference" value="4" class="display-checkbox" /> 
+        <label for="pref4" class="pref1-btn">
+        </label>
+        <label for="pref4" class="label-text">
+            Least chance of toxicity or side effects (maintaining daily living as
+            near as normal)      </label>
+      </div>
+      <!-- 4 preferences end-->
+         <!-- 5 preferences -->
+     <div class="flex-toggle">
+        <input type="checkbox" id="pref5" name="preference" value="5" class="display-checkbox" /> 
+        <label for="pref5" class="pref1-btn pref5-btn">
+        </label>
+        <label for="pref5" class="label-text">
+            Least out-of-pocket expenses     </label>
+      </div>
+      <!-- 5 preferences end-->
+  
+    
+      
+    </div>
+    <p id="error-message"  ></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
